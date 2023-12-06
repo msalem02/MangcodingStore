@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  padding: 20px 0;
+  box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: calc(100% - 240px);
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+header .logo img {
+  width: 35px;
+}
+header .logo a {
+  color: #545be8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding-left: 50px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  color: #101928;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.active {
+  font-weight: 900;
+}
+header .auth {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header .auth a {
+  padding: 5.354px 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+header .auth .login {
+  color: #545be8;
+  border: 2px solid #545be8;
+}
+header .auth .register {
+  background-color: #545be8;
+  color: #fff;
+}
