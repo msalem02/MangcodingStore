@@ -7,12 +7,12 @@
 }
 
 header {
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
   z-index: 9;
   padding: 20px 0;
   box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .container {
@@ -80,4 +80,176 @@ header .auth .login {
 header .auth .register {
   background-color: #545be8;
   color: #fff;
+}
+.tw {
+  height: 600px;
+  background-color: #eee;
+}
+
+.courses {
+  padding: 40px 0;
+  background-color: #fff;
+}
+.courses .row {
+  gap: 30px;
+  align-items: stretch;
+}
+.course-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  width: calc((100% - 30px) / 2);
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.course-description p:nth-child(1) {
+  color: #545be8;
+  font-size: 25px;
+}
+.course-description h2 {
+  font-size: 50px;
+}
+.course-description p:last-of-type {
+  color: #969696;
+}
+.course-description a {
+  background-color: #545be8;
+  width: fit-content;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+.course-card {
+  position: relative;
+}
+.course-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: flex-start;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.course-info span:first-of-type {
+  padding: 10px;
+  background-color: #545be8;
+}
+.course-info span:last-of-type {
+  align-self: flex-end;
+  font-size: 20px;
+}
+.course-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.course-details .views {
+  color: #545be8;
+}
+.course-details .row:last-of-type {
+  justify-content: flex-start;
+  color: #969696;
+}
+.courses .row {
+  gap: 30px;
+}
+.courses .course-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 30px) / 2);
+  gap: 20px;
+}
+.courses img {
+  width: 100%;
+  filter: brightness(60%);
+  display: flex;
+}
+.course {
+  width: calc((100% - 30px) / 2);
+  box-shadow: 5px 5px 8.2372px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #393e46;
+  padding: 50px;
+  color: #fff;
+}
+footer .logo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .logo img {
+  width: 35px;
+}
+footer a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+footer .row {
+  gap: 60px;
+}
+footer .footer-left-sider,
+.footer-right-sider {
+  width: calc((100% - 60px) / 2);
+}
+footer .footer-left-sider {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  width: 490px;
+}
+footer .footer-left-sider p {
+  font-family: "Poppins", sans-serif;
+}
+footer .footer-icons {
+  display: flex;
+  gap: 15px;
+}
+footer .footer-icons img {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  padding: 8px;
+  box-sizing: content-box;
+}
+
+footer .footer-right-sider {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer .footer-right-sider h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+footer .footer-right-sider a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+footer .footer-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .footer-item nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
 }
